@@ -1,0 +1,55 @@
+.nav-bar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgb(175, 173, 173);
+  justify-content: space-between;
+  .nav-container {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      &.actived {
+        color: var(--themeColor);
+      } 
+    }
+    &.tally {
+      .iconfont {
+        font-size: 32px;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--themeColor);
+        justify-content: center;
+        align-items: center;
+        transform: scale(1.5) translate(0 -10px);
+        border: 10px solid #ddd;
+        color: #333;
+      }
+    }
+    .iconfont {
+      font-size: 46px;
+    }
+  }
+}
+.router-view {
+  position: absolute;
+  z-index: 99;
+  padding-bottom: 100px;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
